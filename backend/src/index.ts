@@ -15,13 +15,13 @@ const app = new Elysia()
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'deepseek/deepseek-chat-v3-0324:free',
+        model: 'openai/gpt-4o-mini',
         messages,
         max_tokens: 500
       })
     })
     return response.json()
   })
-  .listen(3001) // Port du backend
+  .listen(3001)
 
 console.log(`🦊 Backend running at ${app.server?.url}`)

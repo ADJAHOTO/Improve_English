@@ -1,21 +1,4 @@
-// export async function getAIResponse(messages: { role: string; content: string }[]) {
-//   const response = await fetch('http://localhost:3001/chat', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ messages })
-//   });
-  
-//   if (!response.ok) throw new Error('API Error');
-//   const data = await response.json();
-  
-//   return {
-//     text: data.choices[0].message.content,
-//     corrections: [] 
-//   };
-// }
 
-
-// frontend/lib/ai/openrouter.ts
 
 // Type pour les messages envoyés à l'IA (correspond au backend et à OpenRouter)
 type AIMessage = {
